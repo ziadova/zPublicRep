@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CacheManifestConfig>
+  <Tokens>
+    <!-- Note: The "ViewerBaseUrl" token will be injected by manager. -->
+    <Token Key="EsriJSAPIVersion" Value="3.6"></Token>
+    <Token Key="EsriJSAPILocation" Value="{RelativeProtocol}//js.arcgis.com"></Token>
+    
+    <Token Key="jQueryVersion" Value="1.8"></Token>
+  </Tokens>
+  
+  <!-- Resources which should be cached -->
+  <Cache>
+
+    <!-- Base Template from IIS -->
+    <Include Path="{ViewerBaseUrl}favicon.ico" />
+
+    <Include Path="{ViewerBaseUrl}Index.html" />
+    <Include Path="{ViewerBaseUrl}Tablet.html" />
+    <Include Path="{ViewerBaseUrl}Handheld.html" />
+    
+    <Include Path="{ViewerBaseUrl}Resources/Compiled/Essentials.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Compiled/Framework.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Compiled/Framework.UI.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Compiled/Mapping.Infrastructure.js" />
+    
+    <Include Path="{ViewerBaseUrl}Resources/Locales/Framework.UI.en-US.json.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Locales/Mapping.en-US.json.js" />
+
+    <Include Path="{ViewerBaseUrl}Resources/Scripts/jquery.ui.custom.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Scripts/modernizr.js" />
+    <Include Path="{ViewerBaseUrl}Resources/Scripts/fastclick.js" />
+
+    <Include Path="{ViewerBaseUrl}Resources/Styles/Custom/Desktop.css" />
+    <Include Path="{ViewerBaseUrl}Resources/Styles/Custom/Handheld.css" />
+    <Include Path="{ViewerBaseUrl}Resources/Styles/Custom/Tablet.css" />
+
+    <Include Path="{ViewerBaseUrl}Resources/Styles/Animations.css" />
+    <Include Path="{ViewerBaseUrl}Resources/Styles/Common.css" />
+    <Include Path="{ViewerBaseUrl}Resources/Styles/Desktop.css" />
+    <Include Path="{ViewerBaseUrl}Resources/Styles/Handheld.css" />
+    <Include Path="{ViewerBaseUrl}Resources/Styles/IE.css" />
+    <Include Path="{ViewerBaseUrl}Resources/Styles/IE-small.css" />
+    <Include Path="{ViewerBaseUrl}Resources/Styles/Tablet.css" />
+
+    
+    <!-- Virtual Directory - Images (General) -->
+    <Include Path="Resources/Images/*.png" />
+    <Include Path="Resources/Images/*.gif" />
+    <Include Path="Resources/Images/*.jpg" />
+    
+    <!-- Virtual Directory - Images (Iconography) -->
+    <Include Path="Resources/Images/Icons/*.png" />
+
+    <!-- Virtual Directory - Core libs -->
+    <Include Path="Resources/Compiled/**/*.js" />
+    
+    <!-- Virtual Directory - Config -->
+    <Include Path="Resources/Config/**/*.js" />
+    
+    <!-- Virtual Directory - Local scripts -->
+    <Include Path="Resources/Scripts/**/*.js" />
+    
+    <!-- Virtual Directory - Styles -->
+    <Include Path="Resources/Styles/**/*.css" />
+   
+    
+    <!-- Virtual Directory - Misc -->
+    <Include Path="*.html" />
+    <Include Path="favicon.ico" />
+    
+    <!-- jQuery -->
+    <Include Path="{RelativeProtocol}//ajax.googleapis.com/ajax/libs/jquery/{jQueryVersion}/jquery.min.js" />
+
+    <!-- ESRI JSAPI CSS -->
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/css/esri.css" />
+    
+    <!-- ESRI JSAPI Scripts -->
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/init.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dojo/DeferredList.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dojo/io/iframe.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dojo/request/iframe.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dojox/gfx/svg.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/layers/FeatureLayer.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/layers/FeatureType.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/layers/FeatureTemplate.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/layers/FeatureEditResult.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/layers/SnapshotMode.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/layers/OnDemandMode.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/layers/SelectionMode.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/layers/TrackManager.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dojo/cldr/nls/number.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dojo/cldr/nls/gregorian.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dijit/nls/common.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dijit/form/nls/validate.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/layers/wms.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/layers/wmts.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/layers/dynamic.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/layers/WMSLayer.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/layers/tiled.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/layers/WMTSLayer.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/nls/jsapi_en-us.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/nls/jsapi.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/request.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/layers/RenderMode.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/layers/GridLayout.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/layers/WMSLayerInfo.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/layers/WMTSLayerInfo.js" />
+    
+    <!-- ESRI JSAPI Scripts - dojo -->
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dijit/CheckedMenuItem.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dijit/DropDownMenu.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dijit/Menu.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dijit/MenuItem.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dijit/MenuSeparator.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dijit/PopupMenuItem.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dijit/TooltipDialog.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dijit/_MenuBase.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dijit/_Contained.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dijit/_KeyNavContainer.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dijit/_MenuBase.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dijit/layout/BorderContainer.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dijit/layout/ContentPane.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dijit/layout/_ContentPaneResizeMixin.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dijit/layout/_LayoutWidget.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dijit/layout/utils.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dijit/nls/loading.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dojo/cookie.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dojo/html.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dojox/gfx/Moveable.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dojox/gfx/Mover.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/dojo/dojox/gfx/move.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/toolbars/_Box.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/toolbars/_GraphicMover.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/toolbars/_VertexEditor.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/toolbars/_VertexMover.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/toolbars/css/edit.css" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/toolbars/edit.js" />
+    <Include Path="{EsriJSAPILocation}/{EsriJSAPIVersion}/js/esri/dijit/images/popup.png" />
+    
+
+
+    <!-- Resources - Images (General) -->
+    <Include Path="{ViewerBaseUrl}Resources/Images/banner-background.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/banner-logo.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/blank-tile.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/body-bg.gif" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/header-background.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/loader-small.gif" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/map-callout-pointer.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/paging-control-sprite-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/paging-control-sprite-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/ParcelByID.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/ParcelByOwner.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/ParcelByValue.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/SearchSchools.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/splash-graphic.png" />
+    
+    <!-- Resources - Images (Iconography) -->
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/add-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/arrow-down-small-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/arrow-down-white.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/arrow-left-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/arrow-right-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/arrow-right-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/arrow-right-alt-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/arrow-sort-small-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/arrow-up-small-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/attach-file-photo-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/check-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/check-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/chevron-left-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/chevron-left-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/chevron-right-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/chevron-right-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/clear-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/connection-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/connection-off-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/connection-on-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/details-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/dot-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/download-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/download-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/draw-circle-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/draw-ellipse-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/draw-extent-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/draw-freehand-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/draw-multipoint-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/draw-point-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/draw-polygon-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/draw-polyline-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/draw-rectangle-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/edit-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/edit-log.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/edit.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/error-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/error-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/expander-closed-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/expander-open-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/file-add-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/file-clear-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/file-edit-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/file-edit-log-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/file-edit-white-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/file-multi-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/geolocate-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/geolocate.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/globe-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/house-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/house-number-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/house-owner-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/house-value-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/IconPlaceholder24x24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/identify-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/identify-freehand-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/identify-polygon-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/identify-polyline-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/identify-rectangle-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/iwtm-default-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/layer-actions-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/layer-manage.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/layerlist-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/layerlist-extract-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/layerlist-menu-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/layerlist-white-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/layerlist.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/map-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/map-nav-initial-extent-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/map-nav-zoom-in-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/map-nav-zoom-out-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/map-white-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/map.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/pan-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/panel-close.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/paperclip-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/print-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/results.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/search-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/search-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/search-results-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/search-white-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/stop-red-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/sync-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/sync-manage-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/template-picker-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/tools-32.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/trashcan-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/trashcan-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/tree-expander-closed-light-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/tree-expander-open-light-16.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/workflow-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/workflow-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/workflow.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/zoom-in.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/zoom-in-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/zoom-initial-extent-24.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/zoom-out.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/zoom-out-24.png" />
+    
+    <!-- Resources - Images (iOS) -->
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/iOS/apple-touch-icon-114x114.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/iOS/apple-touch-icon-57x57.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/iOS/apple-touch-icon-72x72.png" />
+    <Include Path="{ViewerBaseUrl}Resources/Images/Icons/iOS/apple-touch-icon.png" />
+    
+  </Cache>
+
+  <!-- Resources which should not/can not be cached -->
+  <Network>
+  </Network>
+
+  <OfflineFallbacks>
+    <Fallback UrlPattern="online.js" FallbackResource="offline.js" />
+  </OfflineFallbacks>
+  
+</CacheManifestConfig>

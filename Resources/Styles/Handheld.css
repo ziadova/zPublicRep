@@ -1,0 +1,917 @@
+﻿
+/* Begin Script: Mapping/modules/small.css ------------------------- */ 
+
+/* GLOBAL STYLING  (SMALL)-------------------------*/
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background: #FFFFFF;
+    color: #333333;
+}
+
+body {
+    font-size: .8em;
+    -webkit-text-size-adjust: 100%;
+}
+
+button, input, select, textarea { 
+   -webkit-tap-highlight-color: rgba(0,182,236,0.75);
+}
+
+
+/* BUTTONS (SMALL) -------------------------*/
+
+button {
+    -webkit-tap-highlight-color: rgba(0,182,236,0.75);
+}
+
+
+/* VIEW CONTAINERS / MODULE CONTAINERS (SMALL) -------------------------*/
+
+.panel-header {
+    height: 50px;
+    line-height: 50px;
+}
+
+.panel-header h2 {
+    font-size: 1.1em;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.panel-header-button {
+    width: 50px;
+    -webkit-tap-highlight-color: rgba(0,182,236,0.75);
+}
+
+.panel-scroll-container {
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    position: absolute;
+    bottom: 0px;
+
+}
+
+.view-container-view {
+    height: 100%;
+}
+
+/* LIST MENU (SMALL) -------------------------*/
+
+.list-menu-item {
+    padding: 1em;
+    border-top: 1px solid #FFFFFF;
+    border-bottom: 1px solid #EEEEEE;
+    -webkit-tap-highlight-color: rgba(0,182,236,0.75);
+}
+
+.list-submenu {
+    margin: 8px;
+    background: #FFFFFF;
+    border: 1px solid #999999;
+    border-radius: 6px;
+}
+
+a.list-menu-item {
+    color: #333333;
+}
+
+.list-menu-closed {
+    background: url("../../Resources/Images/Icons/expander-closed-24.png") right center no-repeat;
+}
+
+.list-menu-open {
+    background: url("../../Resources/Images/Icons/expander-open-24.png") right center no-repeat;
+}
+
+
+/* LOADING INDICATOR (SMALL) -------------------------*/
+
+.loading-container {
+    text-align: center;
+    padding: 0.5em;
+}
+
+.loading-img,
+.loading-msg {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.loading-img {
+    width: 24px;
+    height: 24px;
+    background-image: url(../Images/loader-small.gif);
+}
+
+
+/* TREEVIEW (SMALL) -------------------------*/
+
+.tree-expander {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #999999;
+    border-radius: 2px;
+}
+
+.tree-expander.expanded {
+   background: #999999 url(../Images/Icons/minus-white-16.png) center center no-repeat;
+}
+
+.tree-expander.collapsed {
+   background: #999999 url(../Images/Icons/add-white-16.png) center center no-repeat;
+}
+
+/* End Script: Mapping/modules/small.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/FeatureEditing/CSS/small.css ------------------------- */ 
+.screen-region .FeatureEditingContainerView {
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+/* End Script: Mapping/modules/FeatureEditing/CSS/small.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Info/CSS/small.css ------------------------- */ 
+.screen-region .HomePanelContainerView {
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+/* End Script: Mapping/modules/Info/CSS/small.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/IWantToMenu/CSS/small.css ------------------------- */ 
+
+/* I WANT TO MENU  (SMALL)-------------------------*/
+
+.toolbar td.IWantToMenuView {
+    background: #FF6A00;
+    background: linear-gradient(top, #FF8F40 0%,#FF6A00 100%);
+    background: -moz-linear-gradient(top, #FF8F40 0%, #FF6A00 100%);
+    background: -webkit-linear-gradient(top, #FF8F40 0%,#FF6A00 100%);
+    background: -o-linear-gradient(top, #FF8F40 0%, #FF6A00 100%);
+    background: -ms-linear-gradient(top, #FF8F40 0%, #FF6A00 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF8F40', endColorstr='#FF6A00',GradientType=0 );
+}
+
+.toolbar td.IWantToMenuView span {
+    display: block !important;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+.toolbar td.IWantToMenuView.tb-view-active span {
+    font-weight: bold;
+}
+
+.toolbar td.IWantToMenuView.tb-view-active {
+    background: #FF6A00;
+    background: linear-gradient(top, #FF8F40 0%,#FF6A00 100%);
+    background: -moz-linear-gradient(top, #FF8F40 0%, #FF6A00 100%);
+    background: -webkit-linear-gradient(top, #FF8F40 0%,#FF6A00 100%);
+    background: -o-linear-gradient(top, #FF8F40 0%, #FF6A00 100%);
+    background: -ms-linear-gradient(top, #FF8F40 0%, #FF6A00 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF8F40', endColorstr='#FF6A00',GradientType=0 );
+}
+
+.toolbar .IWantToMenuView img {
+    display: none !important;
+}
+
+.screen-region .IWantToMenuView {
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.wtm-list {
+    overflow: auto;
+    height: 100%;
+}
+
+/* End Script: Mapping/modules/IWantToMenu/CSS/small.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Map/CSS/small.css ------------------------- */ 
+/* MAP (SMALL) -------------------------*/
+.map-navigation-region {
+    margin: 0;
+}
+
+/* End Script: Mapping/modules/Map/CSS/small.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Results/CSS/small.css ------------------------- */ 
+
+/* RESULTS PAGING CONTROL (SMALL) -------------------------*/
+.paging-results-total {
+    display: none;
+}
+
+.paging-control {
+    padding: 0.75em;
+    height: auto;
+    font-size: 1em;
+}
+
+.paging-result-info {
+    margin-top: .25em;
+}
+
+.paging-buttons a,
+.paging-buttons-info {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    height: 26px;
+    line-height: 23px;
+}
+
+.paging-buttons .paging-buttons-info {
+    padding: 0 10px;
+}
+
+.paging-control:after,
+.paging-buttons:after {
+    content: " ";
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+}
+
+.paging-control a {
+    -webkit-tap-highlight-color: rgba(0,182,236,0.75);
+}
+
+.paging-result-info a {
+    display: none;
+}
+
+@media only screen and (max-width: 380px) {
+   
+   .paging-result-info,
+   .paging-buttons {
+        float: none;
+    }
+    
+    .paging-buttons {
+        margin-top: 6px;
+        width: 100%;
+    }
+    
+    .paging-buttons a {
+        width: 15%;
+    }
+    
+    .paging-buttons .paging-buttons-info {
+        width: 40%;
+        text-align: center;
+        vertical-align: middle;
+        padding: 0;
+    } 
+    
+}
+
+.screen-region .ResultsViewContainerView {
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+/* End Script: Mapping/modules/Results/CSS/small.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Search/small.css ------------------------- */ 
+
+.small .global-search
+{
+    background: #FFFFFF;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    margin: 8px;
+    padding: 5px 30px 5px 5px;
+    position: relative;
+}
+
+.small .global-search input
+{
+    font-size: 1.2em;
+    border: none;
+    margin: 0 30px 0 0;
+    outline: none;
+    width: 100%;
+}
+
+.small .global-search button
+{
+    background: url(Resources/Images/Icons/search-24.png) center center no-repeat;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 100%;
+    vertical-align: middle;
+}
+
+@media screen and (min-width: 800px)
+{
+    .small .global-search
+    {
+        width: auto;
+    }
+}
+
+/* End Script: Mapping/modules/Search/small.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Search/CSS/small.css ------------------------- */ 
+
+/* GLOBAL SEARCH (SMALL) -------------------------*/
+
+.global-search {
+    padding: 1em;
+    text-align: right;
+}
+
+.global-search input {
+    width: 100%;
+    margin-bottom: 1em;
+    padding: .5em;
+    -webkit-appearance: none;
+}
+
+.global-search button {
+    display: inline-block;
+    width: auto;
+    padding: .5em .8em;
+}
+
+/* End Script: Mapping/modules/Search/CSS/small.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Shells/CSS/small.css ------------------------- */ 
+
+/* SHELL (SMALL) -------------------------*/
+
+.screen-region {
+    position: absolute;
+}
+
+.tool-region {
+    overflow: hidden;
+}
+
+.shell-small 
+{
+    height: 100%;
+}
+
+.shell-container-inner
+{
+    height: 100%;
+}
+
+/* End Script: Mapping/modules/Shells/CSS/small.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/SimpleLayerList/CSS/small.css ------------------------- */ 
+
+/* SIMPLE LAYER LIST (SMALL) -------------------------*/
+
+.layer .layers {
+    padding-left: 17px;
+}
+
+.layerlist input[type=checkbox] {
+    left: 44px;
+    width: 24px;
+    height: 24px;
+    margin: 10px 0;
+}
+
+.layerlist input[type=checkbox]:disabled {
+    opacity: 0.4;
+}
+
+.layer-info .contents {
+    margin-left: 44px;
+    padding: 10px 10px 10px 32px;
+}
+
+.layer-info .display-name {
+    line-height: 24px;
+}
+
+.layerlist input[type=checkbox],
+.layer-info .contents,
+.layer-actions {
+    -webkit-tap-highlight-color: rgba(0,182,236,0.75);
+}
+
+.layerlist .tree-expander {
+    height: 24px;
+    width: 24px;
+    margin: 10px;
+}
+
+.screen-region .LayerDataContainerView {
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+/* End Script: Mapping/modules/SimpleLayerList/CSS/small.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Status/CSS/small.css ------------------------- */ 
+
+/* STATUS INDICATOR (SMALL) -------------------------*/
+
+.status-window {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.status-close {
+    opacity: 100;
+}
+
+/* End Script: Mapping/modules/Status/CSS/small.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Toolbar/CSS/small.css ------------------------- */ 
+
+/* TOOLBAR (SMALL) -------------------------*/
+.toolbar {
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+    background: #121212;
+    background: linear-gradient(top, #404040 0%, #121212 100%);
+    background: -moz-linear-gradient(top, #404040 0%, #121212 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#404040), color-stop(100%,#121212));
+    background: -webkit-linear-gradient(top, #404040 0%,#121212 100%);
+    background: -o-linear-gradient(top, #404040 0%,#121212 100%);
+    background: -ms-linear-gradient(top, #404040 0%,#121212 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#404040', endColorstr='#121212',GradientType=0 );
+    font-size: 0.8em;
+}
+
+.toolbar * {
+   box-sizing: border-box;
+   -moz-box-sizing: border-box; 
+   text-align: center;
+}
+
+.toolbar table {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-collapse: separate;
+}
+
+.toolbar td {
+    padding: 0 .8em;
+    border-left: 1px solid #555555;
+}
+
+.toolbar td:first-child:nth-last-child(4),
+.toolbar td:first-child:nth-last-child(4) ~ td {
+    width: 25%;
+}
+
+.toolbar td:first-child:nth-last-child(5),
+.toolbar td:first-child:nth-last-child(5) ~ td {
+    width: 20%;
+}
+
+.toolbar td:first-child:nth-last-child(6),
+.toolbar td:first-child:nth-last-child(6) ~ td {
+    width: 16.666%;
+}
+
+.toolbar td:first-child {
+    border-left: none;
+}
+
+.toolbar td:last-child {
+    border-right: none;
+}
+
+.toolbar img {
+    max-width: 24px;
+    max-height: 24px;
+    opacity: 0.75;
+}
+
+.toolbar .highlight {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 3px;
+    display: none;
+} 
+
+.tab-container span {
+   display: none !important;
+   margin-top: 4px;
+   color: #FFFFFF;
+   font-size: .9em;
+}
+
+.tb-view-active {
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+    background: #121212;
+    background: linear-gradient(top, #777777 0%, #555555 100%);
+    background: -moz-linear-gradient(top, #777777 0%, #555555 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#777777), color-stop(100%,#555555));
+    background: -webkit-linear-gradient(top, #777777 0%,#555555 100%);
+    background: -o-linear-gradient(top, #777777 0%,#555555 100%);
+    background: -ms-linear-gradient(top, #777777 0%,#555555 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#777777', endColorstr='#555555',GradientType=0 );
+}
+
+.tb-view-active img,
+.tb-view-active span {
+    opacity: 1;
+}
+
+.toolbar-item ul:after {
+    display: block;
+    clear: both;
+    content: " ";
+    height: 0;
+    visibility: hidden;
+}
+.toolbar-item ul {
+    padding-bottom: 1.5em;
+}
+
+.toolbar-body.small .toolbar-item.toolbar-group {
+    text-align: left;
+    padding: 0;
+}
+.toolbar-body.small .toolbar-parent > li {
+    display: block;
+}
+
+.toolbar-body.small ul li.toolbar-item.button {
+    display: block;
+    float: left;
+    margin: 0;
+}
+
+.toolbar-item.toolbar-group h2 {
+    font-weight: normal;
+    font-size: 1.35em;
+    padding: 0.25em 0.5em;
+    background: #DDDDDD;
+    margin-bottom: 1em;
+}
+.toolbar-item.toolbar-group h3 {
+    font-weight: normal;
+    padding: 0;
+    margin: 0 0.5em 0.5em 0.5em;
+    border-bottom: 1px solid #DDDDDD;
+}
+.toolbar-item.toolbar-group h3 {
+    font-size: 1.25em;
+    display: block;
+    clear: both;
+}
+
+.toolbar-item.toolbar-group.hidden
+{
+    display: none !important;
+}
+
+.toolbar-item.button {
+    width: 100%;
+}
+
+.toolbar-item.button:nth-child(1n+1) { /* Sets the first item to clear */
+    clear: both;
+}
+
+@media all and (min-width: 100px) {
+    .toolbar-item.button {
+        width: 49.9%;
+    }
+    .toolbar-item.button:nth-child(1n+1) { /* Overrides the previous clear */
+        clear: none;
+    }
+    .toolbar-item.button:nth-child(2n+1) { /* Clears every 3rd item */
+        clear: both;
+    }
+}
+
+@media all and (min-width: 200px) {
+    .toolbar-item.button {
+        width: 33%;
+    }
+    .toolbar-item.button:nth-child(2n+1) { /* Overrides the previous clear */
+        clear: none;
+    }
+    .toolbar-item.button:nth-child(3n+1) {
+        clear: both;
+    }
+}
+
+@media all and (min-width: 300px) {
+    .toolbar-item.button {
+        width: 24.9%;
+    }
+    .toolbar-item.button:nth-child(3n+1) { /* Overrides the previous clear */
+        clear: none;
+    }
+    .toolbar-item.button:nth-child(4n+1) {
+        clear: both;
+    }
+}
+
+@media all and (min-width: 400px) {
+    .toolbar-item.button {
+        width: 19.9%;
+    }
+    .toolbar-item.button:nth-child(4n+1) { /* Overrides the previous clear */
+        clear: none;
+    }
+    .toolbar-item.button:nth-child(5n+1) {
+        clear: both;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .toolbar-item.button {
+        width: 16.65%;
+    }
+    .toolbar-item.button:nth-child(5n+1) { /* Overrides the previous clear */
+        clear: none;
+    }
+    .toolbar-item.button:nth-child(6n+1) {
+        clear: both;
+    }
+}
+
+@media all and (min-width: 700px) {
+    .toolbar-item.button {
+        width: 14.25%;
+    }
+    .toolbar-item.button:nth-child(6n+1) { /* Overrides the previous clear */
+        clear: none;
+    }
+    .toolbar-item.button:nth-child(7n+1) {
+        clear: both;
+    }
+}
+
+@media all and (min-width: 800px) {
+    .toolbar-item.button {
+        width: 12.4%;
+    }
+    .toolbar-item.button:nth-child(7n+1) { /* Overrides the previous clear */
+        clear: none;
+    }
+    .toolbar-item.button:nth-child(8n+1) {
+        clear: both;
+    }
+}
+
+@media all and (min-width: 900px) {
+    .toolbar-item.button {
+        width: 11%;
+    }
+    .toolbar-item.button:nth-child(8n+1) { /* Overrides the previous clear */
+        clear: none;
+    }
+    .toolbar-item.button:nth-child(9n+1) {
+        clear: both;
+    }
+}
+
+@media all and (min-width: 1000px) {
+    .toolbar-item.button {
+        width: 9.9%;
+    }
+    .toolbar-item.button:nth-child(9n+1) { /* Overrides the previous clear */
+        clear: none;
+    }
+    .toolbar-item.button:nth-child(10n+1) {
+        clear: both;
+    }
+}
+
+@media all and (min-width: 1100px) {
+    .toolbar-item.button {
+        width: 9%;
+    }
+    .toolbar-item.button:nth-child(10n+1) { /* Overrides the previous clear */
+        clear: none;
+    }
+    .toolbar-item.button:nth-child(11n+1) {
+        clear: both;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .toolbar-item.button {
+        width: 8%;
+    }
+    .toolbar-item.button:nth-child(11n+1) { /* Overrides the previous clear */
+        clear: none;
+    }
+    .toolbar-item.button:nth-child(12n+1) {
+        clear: both;
+    }
+}
+
+.toolbar-body.small {
+    width: 100%;
+    height: 100%;
+    background: #ddd;
+}
+
+.toolbar-body.small > .toolbar-item.toolbar-group
+{
+    text-align: left;
+}
+
+    .toolbar-body.small .toolbar-item.toolbar-group > p
+    {
+        display: none;
+    }
+
+.toolbar-item.toolbar-group
+{
+    margin: 0px;
+    border: none;
+}
+
+.toolbar-body.small ul li
+{
+    float: none;
+}
+
+.toolbar-toggle-button
+{   
+    width: 32px;
+    height: 32px;
+    margin: 5px 5px 0 5px;
+    background-color: #FFFFFF;
+    background: url(../../Resources/Images/Icons/tools-32.png) no-repeat center center white;
+    border: 1px solid #999999;
+    border-radius: 3px;
+    -webkit-border-radius: 2px;
+    opacity: 0.65;
+    filter: alpha(opacity = 65);
+    padding: 0;
+}
+
+.MainToolbarView {
+    height: 100%;
+    overflow: auto;
+}
+
+/* End Script: Mapping/modules/Toolbar/CSS/small.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Workflow/Forms/Items/CSS/small.css ------------------------- */ 
+
+/* FORM ITEMS (SMALL) -------------------------*/
+
+input,
+select,
+textarea {
+	padding: .5em;
+	font-size: 1em;
+}
+
+input[type='checkbox'],
+input[type='radio'],
+input[type='text'],
+select,
+textarea {
+   -webkit-tap-highlight-color: rgba(0,0,0,0);  
+}
+
+input[type='text'],
+input[type='password'] {
+	width: 100%; /* Use available space for fields on small devices */
+	max-width: 100%; /* Don't exceed the width of the container */
+}
+
+.form-label,
+.form-control {
+	display: block;
+	float: none;
+	padding-left: 0;
+	padding-right: 0;
+	width: auto;
+}
+
+.form-item {
+	padding: .5em 0;
+}
+
+.label-left .form-label,
+.label-right .form-label {
+	text-align: left;
+}
+
+.combobox,
+.listbox {
+    display: inline-block;
+    width: 100%;
+}
+
+.combobox select,
+.listbox select,
+textarea {
+    width: 100% !important; /* Use available space for fields on small devices */
+	max-width: 100% !important; /* Don't exceed the width of the container */
+}
+
+input[type='checkbox'] {
+    width: 24px;
+    height: 24px;
+}
+
+input[type='radio'] {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    border: 2px solid #999999;
+}
+
+input[type='checkbox']:checked,
+input[type='radio']:checked {
+    border: 2px solid #999999;
+}
+
+
+input[type='checkbox']:disabled,
+input[type='radio']:disabled {
+    opacity: 0.4;
+}
+
+
+.checkbox .form-label.left,
+.radiobtn .form-label.left {
+    display: inline-block;
+}
+
+.checkbox .form-label.right,
+.radiobtn .form-label.right {
+    display: inline-block;
+}
+
+.autocomplete-menu {
+    position: relative;
+}
+
+.autocomplete-menu ul {
+    max-height: none;
+}
+
+.WorkflowListView {
+    height: 100%;
+    overflow: auto;
+}
+
+/* End Script: Mapping/modules/Workflow/Forms/Items/CSS/small.css ------------------------- */ 
+

@@ -1,0 +1,966 @@
+﻿
+/* Begin Script: Mapping/modules/medium.css ------------------------- */ 
+
+/* GLOBAL STYLING  (MEDIUM)-------------------------*/
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #FFFFFF;
+    color: #333333;
+}
+
+html {
+	-webkit-text-size-adjust: none; /* IOS - Retain font size when switching modes */
+}
+
+button, input, select, textarea { 
+   -webkit-tap-highlight-color: rgba(0,182,236,0.75);
+}
+
+
+/* MODAL WINDOW (MEDIUM) -------------------------*/
+
+.modal-container {
+    min-width: 360px;
+}
+
+
+/* VIEW CONTAINERS / MODULE CONTAINERS (MEDIUM) -------------------------*/
+
+.panel-header h2 {
+    margin: 0 40px; /* Allows space for icons on either side of the heading */
+    font-size: 1.1em;
+}
+
+.panel-header-button {
+    -webkit-tap-highlight-color: rgba(0,182,236,0.75);
+}
+
+.panel-scroll-container {
+    -webkit-overflow-scrolling: touch;
+}
+
+.medium-shell-left .panel-scroll-container,
+.medium-shell-bottom .panel-scroll-container {
+    position: absolute;
+    -webkit-overflow-scrolling: touch;
+}
+
+.medium-shell-bottom .panel-header {
+    border-top: 1px solid #999999;
+}
+
+
+/* BUTTONS (MEDIUM) -------------------------*/
+
+button {
+    -webkit-tap-highlight-color: rgba(0,182,236,0.75);
+}
+
+
+/* LIST MENU (MEDIUM) -------------------------*/
+
+.list-menu-item {
+    border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #EEEEEE;
+    -webkit-tap-highlight-color: rgba(0,182,236,0.75);
+}
+
+.list-submenu {
+    margin: 8px;
+    background: #FFFFFF;
+    border: 1px solid #999999;
+    border-radius: 6px;
+}
+
+a.list-menu-item {
+    color: #333333;
+}
+
+.list-menu-closed {
+    background: url("../../Resources/Images/Icons/expander-closed-24.png") right center no-repeat;
+}
+
+.list-menu-open {
+    background: url("../../Resources/Images/Icons/expander-open-24.png") right center no-repeat;
+}
+
+
+/* LOADING INDICATOR (MEDIUM) -------------------------*/
+
+.loading-container {
+    text-align: center;
+    padding: 0.5em;
+}
+
+.loading-img,
+.loading-msg {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.loading-img {
+    width: 24px;
+    height: 24px;
+    background-image: url(../Images/loader-small.gif);
+}
+
+
+/* TAB CONTROL (MEDIUM) -------------------------*/
+
+.tab-container {
+    background-color: #EEEEEE;
+}
+
+.tab-container .no-results {
+    background-color: #FFFFFF;
+}
+
+.tab-control {
+    position: relative;
+    margin: 0;
+	padding: 4px 4px 0 4px;
+	overflow: hidden;
+	white-space: nowrap;
+	z-index: 200;
+	list-style-type: none;
+}
+
+.tab-control li {
+    float: left;
+    margin: 0 1px 0 0;
+    position: relative;
+    z-index: 200;
+    max-width: 100px;
+}
+
+.tab-control,
+.tab-control a {
+    color: #333333;
+    height: 26px;
+    line-height: 25px;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,182,236,0.75);
+}
+
+.tab,
+.tab-active {
+    cursor: pointer;
+    border-radius: 2px 2px 0 0;
+    -webkit-border-radius: 2px 2px 0 0;
+    display: block;
+    padding: 0 6px;
+}
+
+.tab {
+    border: 1px solid #CCCCCC;
+    color: #999999;
+}
+
+.tab-active {
+    background: #FFFFFF;
+    border: 1px solid #AAAAAA;
+    color: #333333;
+}
+
+.tab-control .tab,
+.tab-control .tab-active {
+    border-bottom: none;
+}
+
+.tab span,
+.tab-active span {
+    display: block;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* TREEVIEW (MEDIUM) -------------------------*/
+
+.tree-expander {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 24px;
+    height: 24px;
+    border-radius: 2px;
+}
+
+.tree-expander.expanded {
+   background: url(../Images/Icons/minus-24.png) center center no-repeat;
+}
+
+.tree-expander.collapsed {
+   background: url(../Images/Icons/add-24.png) center center no-repeat;
+}
+
+
+
+/* NOTIFICATIONS (MEDIUM) -------------------------*/
+
+.notification textarea {
+    max-width: 300px;
+    max-height: 300px;
+    resize: none;
+}
+
+
+/* MEDIA QUERIES (MEDIUM) -------------------------*/
+
+@media screen and (max-height: 1020px) and (min-width: 760px) {
+
+    .modal-container .panel-scroll-container {
+        max-height: 700px;
+        min-width: 300px;
+    }
+}
+
+@media screen and (max-height: 760px) and (min-width: 1020px) {
+
+    .modal-container .panel-scroll-container {
+        max-height: 500px;
+        min-width: 300px;
+    }
+}
+
+
+/* ANDROID FIXES (MEDIUM)-------------------------*/
+
+.map svg,
+.map-top-left,
+.map-top-right,
+.map-bottom-left,
+.map-bottom-right,
+.map-navigation-region,
+.map-callout-wrapper,
+.modal,
+.status-indicator,
+.ui-datepicker {
+    -webkit-transform: translate3d(0px, 0px, 1px);
+}
+
+/* End Script: Mapping/modules/medium.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Alert/CSS/medium.css ------------------------- */ 
+
+/* ALERT (MEDIUM) -------------------------*/
+
+.modal-container .alert {
+    max-width: 400px;
+}
+
+/* End Script: Mapping/modules/Alert/CSS/medium.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Banner/CSS/medium.css ------------------------- */ 
+
+/* BANNER (MEDIUM) -------------------------*/
+
+.banner {
+    position: relative;
+    height: 50px;    
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #dddddd;
+}
+
+.banner-title,
+.banner-subtitle {  
+    position: relative;  
+    z-index: 500;
+}
+
+.banner-left-img,
+.banner-right-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-left-img {
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+}
+
+.banner-right-img {
+    top: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+.banner-content-region .view {
+    height: 100%;
+}
+
+.banner-text {
+    float: left;
+}
+
+/* End Script: Mapping/modules/Banner/CSS/medium.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/FeatureLayer/CSS/medium.css ------------------------- */ 
+
+/* SYNC LOG (MEDIUM) -------------------------*/
+
+.sync-log .scroll {
+    width: 400px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+/* End Script: Mapping/modules/FeatureLayer/CSS/medium.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/IWantToMenu/CSS/medium.css ------------------------- */ 
+
+/* I WANT TO MENU  (MEDIUM)-------------------------*/
+
+.wtm-menu-active,
+.wtm-menu-inactive {
+    position: relative;
+}
+
+.wtm-inactive .wtm-list-container {
+    display: none;
+}
+
+.wtm-active .wtm-list-container {
+    position: absolute;
+    left: 0;
+    top: 31px;
+}
+
+.wtm-active .wtm-button,
+.wtm-list {
+    border: 1px solid #999999;
+}
+
+.wtm-button {
+    display: inline-block;
+    position: relative;
+    height: 31px;
+    line-height: 31px;
+    padding: 0 .5em;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 500;
+    border-radius: 3px;
+}
+
+.wtm-active .wtm-button {
+    background: #FFFFFF;
+    border-bottom: none;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #333333;
+    filter: none;
+}
+
+.wtm-list {
+    min-width: 300px;
+    max-width: 400px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    background: #FFFFFF;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    transition: max-height 250ms;
+	-webkit-transition: max-height 250ms;
+	-moz-transition: max-height 250ms;
+	-o-transition: max-height 250ms;
+}
+
+.wtm-list div.list-menu-item:first-child {
+    border-top-right-radius: .25em;
+}
+
+.wtm-list div.list-menu-item:last-child {
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom: none;
+}
+
+@media screen and (max-height: 768px) {
+
+    .wtm-list {
+        max-height: 500px;
+    }
+}
+
+@media screen and (max-height: 1024) {
+
+    .wtm-list {
+        max-height: 768px;
+    }
+}
+
+/* End Script: Mapping/modules/IWantToMenu/CSS/medium.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Log/CSS/medium.css ------------------------- */ 
+
+/* LOG VIEW (MEDIUM) -------------------------*/
+
+.logview-inner {
+    -webkit-overflow-scrolling: touch;
+}
+
+/* End Script: Mapping/modules/Log/CSS/medium.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Results/CSS/medium.css ------------------------- */ 
+
+/* RESULTS (MEDIUM) -------------------------*/
+
+.results-table thead {
+	background-color: #EEEEEE;
+}
+
+.results-table th {
+	font-weight: normal;
+}
+
+.results-table th,
+.results-table td {
+	border: 1px solid #DDDDDD;
+}
+
+.results-table th span,
+.results-table td span {
+	display: block;
+	padding: 8px;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.results-table td {
+	cursor: pointer;
+}
+
+.results-table .feature-set-header {
+	background: #DDDDDD;
+	font-weight: bold;
+	padding: 8px;
+}
+
+.results .paged {
+	bottom: 41px;
+}
+
+.results-list,
+.results-table {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+
+.results-list {
+	overflow-x: hidden;
+}
+
+.results-table {
+	top: 30px;
+    bottom: 46px;
+	display: inline-block;
+	margin-top: -1px;
+	min-width: 100%;
+	vertical-align: top;
+	border-top: 1px solid #AAAAAA;
+}
+
+.results-table table {
+	margin-top: -1px;
+}
+
+.results-table tbody tr:nth-child(odd) {
+	background-color: #FAFAFA;
+}
+
+.results tbody tr:hover {
+	background-color: #F7F7F7;
+}
+
+.results tbody tr:active {
+	background-color: #EEEEEE;
+}
+
+
+/* RESULTS PAGING CONTROL (MEDIUM) -------------------------*/
+
+.medium-shell-left .results .paged {
+    bottom: 61px;
+}
+
+.medium-shell-left .paging-control.has-pages {
+	height: 80px;
+}
+
+.medium-shell-left .paging-control.no-pages {
+	height: 48px;
+}
+
+.medium-shell-left .paging-result-info {
+    float: none;
+    height: 24px;
+    line-height: 28px;
+}
+
+.medium-shell-left .paging-buttons {
+    margin-top: .25em;
+    float: left;
+}
+
+
+/* PAGING CONTROL (LARGE) -------------------------*/
+
+.paging-control {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.paging-control-inner {
+	margin: 0 .75em;
+}
+
+.paging-result-info {
+	line-height: 24px;
+}
+
+.paging-result-info,
+.paging-buttons {
+	margin-top: 10px;
+}
+
+.paging-control a {
+    -webkit-tap-highlight-color: rgba(0,182,236,0.75);
+}
+
+.medium-shell-left .results-list {
+	bottom: 81px;
+}
+
+.medium-shell-left .paging-result-info,
+.medium-shell-left .paging-buttons {
+	float: none;
+}
+
+.medium-shell-left .paging-buttons {
+	margin-top: 10px;
+    overflow: hidden;
+}
+
+.modal .results {
+    position: relative;
+}
+
+.modal .paging-result-info {
+    margin: 0;
+}
+
+/* End Script: Mapping/modules/Results/CSS/medium.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Search/CSS/medium.css ------------------------- */ 
+
+/* GLOBAL SEARCH (MEDIUM) -------------------------*/
+
+.global-search {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 400px;
+}
+
+.global-search input {
+    width: 100%;
+    padding: 5px 30px 5px 5px;
+    background: #FFFFFF;
+    border: 1px solid #1D86B7;
+    border-radius: 4px;
+    font-size: 1.2em;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.global-search input:focus {
+    outline: none;
+    -webkit-user-modify: read-write-plaintext-only; /* Android 3.0+ fix */
+}
+
+.global-search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    background: url(../Images/Icons/search-16.png) center center no-repeat;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    border: none;
+    cursor: pointer;
+    filter: none;
+}
+
+.global-search button span {
+    display: none;
+}
+
+/* End Script: Mapping/modules/Search/CSS/medium.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Shells/CSS/medium.css ------------------------- */ 
+
+/* SHELL (MEDIUM) -------------------------*/
+
+.medium-shell-main,
+.medium-shell-left,
+.medium-shell-right,
+.medium-shell-center {
+    position: absolute;
+}
+
+.medium-shell-header {
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+.medium-shell-header,
+.medium-shell-bottom {
+	position: absolute;
+	display: inline-block;
+}
+
+.medium-shell-left,
+.medium-shell-bottom {
+	overflow: hidden;
+}
+
+.medium-shell-left {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin-left: -1px;
+	border-right: 1px solid #999999;
+}
+
+.medium-shell-bottom {
+    bottom: 0;
+    left: 0;
+    right: 0;
+	z-index: 100;
+	background: #FFFFFF;
+}
+
+.medium-shell-main,
+.medium-shell-center {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.medium-shell-center {
+    z-index: 200;
+}
+
+.collapse-tab a {
+    display: block;
+    width: 39px;
+    height: 38px;
+    margin-left: -1px;
+    border: 1px solid #999999;
+    border-top: none;
+    border-left: none;
+    border-bottom-right-radius: 3px;
+    -moz-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    opacity: 0.65;
+    -webkit-tap-highlight-color: rgba(0,182,236,0.75);
+}
+
+.tab-open
+{
+    background: #FFFFFF url("../Images/Icons/chevron-left-16.png") no-repeat center center;
+}
+
+.tab-closed
+{
+    background: #FFFFFF url("../Images/Icons/chevron-right-16.png") no-repeat center center;
+}
+
+
+.shell-medium 
+{
+    height: 100%;
+}
+
+.shell-container-inner
+{
+    height: 100%;
+    position: relative;
+}
+
+/* End Script: Mapping/modules/Shells/CSS/medium.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/SimpleLayerList/CSS/medium.css ------------------------- */ 
+
+/* SIMPLE LAYER LIST (MEDIUM) -------------------------*/
+
+.layer .layers {
+    padding-left: 17px;
+}
+
+.layerlist input[type=checkbox] {
+    left: 44px;
+    width: 24px;
+    height: 24px;
+    margin: 10px 0;
+}
+
+.layerlist input[type=checkbox]:disabled {
+    opacity: 0.4;
+}
+
+.layer-info .contents {
+    margin-left: 44px;
+    padding: 10px 10px 10px 32px;
+}
+
+.layer-info .display-name {
+    line-height: 24px;
+}
+
+.layerlist input[type=checkbox],
+.layer-info .contents,
+.layer-actions {
+    -webkit-tap-highlight-color: rgba(0,182,236,0.75);
+}
+
+.layerlist .tree-expander {
+    height: 24px;
+    width: 24px;
+    margin: 10px;
+}
+
+/* End Script: Mapping/modules/SimpleLayerList/CSS/medium.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Site/CSS/medium.css ------------------------- */ 
+.service-layers-failure {
+    width: 500px;
+}
+
+/* End Script: Mapping/modules/Site/CSS/medium.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Toolbar/CSS/medium.css ------------------------- */ 
+/* START: Toolbar */
+/* START: Toolbar */
+
+.toolbar-container {
+    background: #DDDDDD;
+}
+
+/* START: Toolbar Tabs --------------- */
+.toolbar-tab-container {
+    position: relative;
+}
+.toolbar-tab {
+    position: relative;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.toolbar-tab
+{
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-bottom: none;
+}
+
+.toolbar-tab a
+{
+    cursor: pointer;
+    text-decoration: none;
+    color: #444444;
+    font-weight: bold;
+}
+
+.toolbar-tab.tb-tab-active
+{
+    cursor: none;
+    background: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    border-bottom: none;
+}
+
+.tb-tab-active:before, 
+.tb-tab-active:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-bottom: 1px solid #CCCCCC;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.tb-tab-active:before {
+    border-right: 1px solid #CCCCCC;
+    -moz-box-shadow: 3px 3px 0px 0px #EEEEEE;
+    -webkit-box-shadow: 3px 3px 0px 0px #EEEEEE;
+    box-shadow: 3px 3px 0px 0px #EEEEEE;
+    left: -6px;
+}
+
+.tb-tab-active:after {
+    border-left: 1px solid #CCCCCC;
+    -moz-box-shadow: -3px 3px 0px 0px #EEEEEE;
+    -webkit-box-shadow: -3px 3px 0px 0px #EEEEEE;
+    box-shadow: -3px 3px 0px 0px #EEEEEE;
+    right: -6px;
+}
+
+ul.toolbar-tab-control {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0.5em 0.5em 0 0.5em;
+}
+
+ul.toolbar-tab-control:after {
+    content: " ";
+    display: block;
+    clear: both;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+ul.toolbar-tab-control li
+{
+    display: block;
+    list-style-type: none;
+    float: left;
+    width: auto;
+}
+
+ul.toolbar-tab-control li a
+{
+    display: block;
+    padding: 0.5em 0.75em;
+}
+/* END: Toolbar Tabs --------------- */
+
+
+.toolbar-body {
+    border-top: 1px solid #CCCCCC;
+    background: #EEEEEE;
+    margin-top: -1px; /* to hide the border behind the active tab */
+}
+.toolbar-body.large > .toolbar-group > h4 {
+    display: none; /* Quick Fix: hiding the extra tab group label from showing up. Should be removed from item templates */
+}
+
+.toolbar-group {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.toolbar-item.toolbar-group.hidden
+{
+    display: none;
+}
+
+.toolbar-body > .toolbar-item.toolbar-group {
+    padding: 0.25em;
+}
+.toolbar-item.toolbar-group {
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+.toolbar-item.toolbar-group > ul > li {
+    margin: 0.15em;
+} 
+.toolbar-item.toolbar-group > ul > li .toolbar-item.toolbar-group > ul > li {
+    margin: 0.25em;
+} 
+li .toolbar-item.toolbar-group {
+    background: #F5F5F5;
+}
+.toolbar-group > ul:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.toolbar-item.button {
+    max-width: 10em;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/* End Script: Mapping/modules/Toolbar/CSS/medium.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Workflow/Forms/Items/CSS/medium.css ------------------------- */ 
+
+/* FORM ITEMS (MEDIUM) -------------------------*/
+
+
+input[type='checkbox'],
+input[type='radio'],
+input[type='text'],
+select,
+textarea {
+   -webkit-tap-highlight-color: rgba(0,0,0,0);  
+}
+
+input[type='checkbox'] {
+    width: 24px;
+    height: 24px;
+}
+
+input[type='radio'] {
+    width: 24px;
+    height: 24px;
+}
+
+input[type='checkbox']:disabled,
+input[type='radio']:disabled {
+    opacity: 0.4;
+}
+
+button.datetime-btn {
+    width: 20px;
+    height: 22px;
+}
+
+/* End Script: Mapping/modules/Workflow/Forms/Items/CSS/medium.css ------------------------- */ 
+

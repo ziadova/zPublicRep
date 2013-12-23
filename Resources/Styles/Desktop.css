@@ -1,0 +1,1053 @@
+﻿
+/* Begin Script: Mapping/modules/large.css ------------------------- */ 
+
+/* GLOBAL STYLING  (LARGE )-------------------------*/
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #FFFFFF;
+    color: #333333;
+}
+
+button {
+    cursor: pointer;  
+}
+
+
+/* MODAL WINDOW (LARGE) -------------------------*/
+
+.modal-container {
+    min-width: 360px;
+}
+
+.modal-container .panel-scroll-container {
+    float: left;
+}
+
+
+/* VIEW CONTAINERS / MODULE CONTAINERS (LARGE) -------------------------*/
+
+.large-shell-left .panel-scroll-container,
+.large-shell-bottom .panel-scroll-container {
+    position: absolute;
+}
+
+.large-shell-bottom .panel-header {
+    border-top: 1px solid #999999;
+}
+
+.panel-header h2 {
+    margin: 0 40px; /* Allows space for icons on either side of the heading */
+    font-size: 1.1em;
+}
+
+
+/* BUTTONS (LARGE) -------------------------*/
+
+button {
+    cursor: pointer; 
+}
+
+button:hover,
+button:active {
+    background: #F7F7F7;
+    background: linear-gradient(top, #EFEFEF 0%,#DDDDDD 100%); 
+    background: -moz-linear-gradient(top, #EFEFEF 0%, #DDDDDD 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EFEFEF), color-stop(100%,#DDDDDD));  
+    background: -webkit-linear-gradient(top, #EFEFEF 0%,#DDDDDD 100%); 
+    background: -o-linear-gradient(top, #EFEFEF 0%,#DDDDDD 100%);
+    background: -ms-linear-gradient(top, #EFEFEF 0%,#DDDDDD 100%);
+}
+
+button:hover {
+   border: 1px solid #AAAAAA;
+}
+
+button:active {
+    border: 1px solid #999999;
+}
+
+button::-moz-focus-inner {  /* Remove button padding in FF */
+    border: 0;
+    padding: 0;
+}
+
+
+/* LIST MENU (LARGE) -------------------------*/
+
+.list-menu-item {
+    border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+.list-menu.active {
+	cursor: pointer;
+}
+
+.list-menu.active .list-menu-item:hover {
+	background-color: #F7F7F7;
+}
+
+.list-menu.active .list-menu-item:active {
+	background-color: #EEEEEE;
+}
+
+a.list-menu-item {
+	color: #333333;
+}
+
+.list-menu-closed {
+	background: url("../../Resources/Images/Icons/expander-closed-24.png") right center no-repeat;
+}
+
+.list-menu-open {
+	background: url("../../Resources/Images/Icons/expander-open-24.png") right center no-repeat;
+}
+
+
+/* LOADING INDICATOR (LARGE) -------------------------*/
+
+.loading-container {
+	text-align: center;
+	padding: 0.5em;
+}
+
+.loading-img,
+.loading-msg {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.loading-img {
+	width: 24px;
+	height: 24px;
+	background-image: url(../Images/loader-small.gif);
+}
+
+
+/* TAB CONTROL (LARGE) -------------------------*/
+
+.tab-container {
+    background-color: #EEEEEE;
+}
+
+.tab-container .no-results {
+    background-color: #FFFFFF;
+}
+
+.tab-control {
+	position: relative;
+    margin: 0;
+	padding: 4px 4px 0 4px;
+	overflow: hidden;
+	white-space: nowrap;
+	z-index: 200;
+	list-style-type: none;
+}
+
+.tab-control li {
+	float: left;
+	margin: 0 4px 0 0;
+	position: relative;
+	z-index: 200;
+	max-width: 120px;
+}
+
+.tab-control,
+.tab-control a,
+.tab-control a:hover {
+	height: 26px;
+	line-height: 25px;
+	text-decoration: none;
+    color: #333333;
+}
+
+.tab,
+.tab-active {
+	cursor: pointer;
+	border-radius: 3px 3px 0 0;
+	-webkit-border-radius: 3px 3px 0 0;
+	display: block;
+	padding: 0 .75em;
+}
+
+.tab {
+	border: 1px solid #CCCCCC;
+    opacity: 0.75;
+}
+
+.tab:hover,
+.tab-active {
+    opacity: 1;
+}
+
+.tab-active,
+.tab:hover {
+	border: 1px solid #999999;
+	color: #333333;
+}
+
+.tab-active {
+    background: #FFFFFF;
+    box-shadow: 1px 1px 1px #AAAAAA;
+    opacity: 1;
+}
+
+.tab-control .tab,
+.tab-control .tab-active {
+	border-bottom: none;
+}
+
+.tab span,
+.tab-active span {
+    display: block;
+    max-width: 120px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* TREEVIEW (LARGE) -------------------------*/
+
+.tree-expander {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 24px;
+    height: 100%;
+    cursor: pointer;
+    margin-left: 1px; /* To match the alignment with the legend expander */
+}
+
+.tree-expander.expanded {
+   background: url(../Images/Icons/tree-expander-open-light-16.png) center center no-repeat;
+}
+
+.tree-expander.collapsed {
+   background: url(../Images/Icons/tree-expander-closed-light-16.png) center center no-repeat;
+}
+
+
+/* NOTIFICATIONS (LARGE) -------------------------*/
+
+.notification textarea {
+    max-width: 300px;
+    max-height: 300px;
+    resize: none;
+}
+
+
+/* MEDIA QUERIES (LARGE) -------------------------*/
+
+@media screen and (max-height: 768px) {
+
+    .modal-container .panel-scroll-container {
+        max-height: 480px;
+    }
+}
+
+@media screen and (min-height: 769px) {
+
+    .modal-container .panel-scroll-container {
+        max-height: 600px;
+    }
+}
+
+
+/* ANIMATIONS (LARGE) -------------------------*/
+
+@keyframes anim-zoom-in {
+    0% { transform: scale(0.9,0.9); opacity: 0; }
+    100% { transform: scale(1,1); opacity: 100; }
+}
+
+@-webkit-keyframes anim-zoom-in {
+    0% {-webkit-transform: scale(0.9,0.9); opacity: 0;}
+    100% { -webkit-transform: scale(1,1); opacity: 100; }
+}
+
+.anim-zoom-in {
+    text-align: center;
+    transform: scale(0,0);
+    transform-origin: 50% 50%;
+    -webkit-transform: scale(0,0);
+    -webkit-tranform-origin: 50% 50%;
+}
+
+.anim-zoom-in {
+    animation-name: anim-zoom-in;
+    animation-duration: 250ms;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;     
+    animation-iteration-count: 1;
+    animation-direction: normal; 
+    animation-fill-mode: forwards;
+    -webkit-animation-name: anim-zoom-in;
+    -webkit-animation-duration: 250ms;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/* End Script: Mapping/modules/large.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Alert/CSS/large.css ------------------------- */ 
+
+/* ALERT (LARGE) -------------------------*/
+
+.modal-container .alert,
+.modal-container .confirm,
+.modal-container .prompt {
+    max-width: 400px;
+}
+
+/* End Script: Mapping/modules/Alert/CSS/large.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Banner/CSS/large.css ------------------------- */ 
+
+/* BANNER (LARGE) -------------------------*/
+
+.banner {
+    position: relative;
+    height: 50px;    
+    background-repeat: repeat-x;
+    border-bottom: 1px solid #666666;
+}
+
+.banner-title,
+.banner-subtitle { 
+    position: relative;  
+    z-index: 500;
+}
+
+.banner-left-img,
+.banner-right-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-left-img {
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+}
+
+.banner-right-img {
+    top: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+/* End Script: Mapping/modules/Banner/CSS/large.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/FeatureDetails/CSS/large.css ------------------------- */ 
+
+/* FEATURE DETAIL PROVIDERS -------------------------*/
+
+.attrib .list-menu-item .list-menu-name,
+.attrib .list-menu-item .list-menu-desc {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.attrib .list-menu-item {
+    display: block;
+    width: 100%;
+    padding: 0;
+}
+
+.attrib .list-menu-name,
+.attrib .list-menu-desc {
+    float: left;
+    vertical-align: bottom;
+    padding: 1em;
+	word-wrap: break-word;
+}
+
+.attrib .list-menu-name {
+    width: 40%;
+    font-weight: bold;
+}
+
+.attrib .list-menu-desc {
+    width: 60%;
+}
+
+/* End Script: Mapping/modules/FeatureDetails/CSS/large.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/FeatureLayer/CSS/large.css ------------------------- */ 
+
+/* SYNC LOG (LARGE) -------------------------*/
+
+.sync-log .scroll {
+    width: 400px;
+    height: 300px;
+    overflow-y: auto;
+}
+
+.feature-layer-details input {
+    width: 24px;
+    height: 18px;
+}
+
+/* End Script: Mapping/modules/FeatureLayer/CSS/large.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/IWantToMenu/CSS/large.css ------------------------- */ 
+
+/* I WANT TO MENU (LARGE)-------------------------*/
+
+.wtm-menu-active,
+.wtm-menu-inactive {
+    position: relative;
+}
+
+.wtm-inactive .wtm-list-container {
+    display: none;
+}
+
+.wtm-active .wtm-list-container {
+    position: absolute;
+    left: 0;
+    top: 31px;
+}
+
+.wtm-active .wtm-button,
+.wtm-list {
+    border: 1px solid #999999;
+}
+
+.wtm-button {
+    display: inline-block;
+    position: relative;
+    height: 31px;
+    line-height: 31px;
+    padding: 0 .5em;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    z-index: 500;
+    border-radius: 3px;
+}
+
+.wtm-active .wtm-button,
+.wtm-active .wtm-button:hover {
+    background: #FFFFFF;
+    border-bottom: none;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    color: #333333;
+    filter: none;
+}
+
+.wtm-button,
+.wtm-button:hover {
+    color: #FFFFFF;
+}
+
+.wtm-list {
+    min-width: 300px;
+    max-width: 400px;
+    overflow: auto;
+    background: #FFFFFF;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    transition: max-height 250ms;
+	-webkit-transition: max-height 250ms;
+	-moz-transition: max-height 250ms;
+	-o-transition: max-height 250ms;
+}
+
+.wtm-list div.list-menu-item:first-child {
+    border-top-right-radius: 3px;
+}
+
+.wtm-list div.list-menu-item:last-child {
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-bottom: none;
+}
+
+@media screen and (max-height: 768px) {
+
+    .wtm-list {
+        max-height: 500px;
+    }
+}
+
+@media screen and (max-height: 480px) {
+
+    .wtm-list {
+        max-height: 300px;
+    }
+}
+
+/* End Script: Mapping/modules/IWantToMenu/CSS/large.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Results/CSS/large.css ------------------------- */ 
+
+/* RESULTS (LARGE) -------------------------*/
+
+.results-table thead {
+	background-color: #EEEEEE;
+}
+
+.results-table th {
+	font-weight: normal;
+}
+
+.results-table th,
+.results-table td {
+	border: 1px solid #DDDDDD;
+}
+
+.results-table th span,
+.results-table td span {
+	display: block;
+	padding: 8px;
+	white-space: nowrap;
+	text-decoration: none;
+}
+
+.results-table td {
+	cursor: pointer;
+}
+
+.results-table .feature-set-header {
+	background: #DDDDDD;
+	font-weight: bold;
+	padding: 8px;
+}
+
+.results-list,
+.results-table {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+
+.results-list {
+	overflow: auto;
+    overflow-x: hidden;
+}
+
+.results-table {
+	top: 30px;
+    bottom: 46px;
+	display: inline-block;
+	margin-top: -1px;
+	min-width: 100%;
+	vertical-align: top;
+	border-top: 1px solid #AAAAAA;
+}
+
+.results-table table {
+	margin-top: -1px;
+}
+
+.results-table tbody tr:nth-child(odd) {
+	background-color: #FAFAFA;
+}
+
+.results tbody tr:hover {
+	background-color: #F7F7F7;
+}
+
+.results tbody tr:active {
+	background-color: #EEEEEE;
+}
+
+
+/* PAGING CONTROL (LARGE) -------------------------*/
+
+.paging-control {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.paging-control-inner {
+	margin: 0 .75em;
+}
+
+.paging-result-info {
+	line-height: 24px;
+}
+
+.paging-result-info,
+.paging-buttons {
+	margin-top: 10px;
+}
+
+.paging-buttons a:hover {
+	background-color: #F7F7F7;
+}
+
+.paging-control a:active {
+	background-color: #FFFFFF;
+	box-shadow: 1px 1px 1px #AAAAAA inset;
+}
+
+.large-shell-left .results-list {
+	bottom: 81px;
+}
+
+.large-shell-left  .paging-control.has-pages {
+	height: 80px;
+}
+
+.large-shell-left .paging-control.no-pages {
+	height: 48px;
+}
+
+.large-shell-left .paging-result-info,
+.large-shell-left .paging-buttons {
+	float: none;
+}
+
+.large-shell-left .paging-buttons {
+	margin-top: 10px;
+    overflow: hidden;
+}
+
+/* End Script: Mapping/modules/Results/CSS/large.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Search/CSS/large.css ------------------------- */ 
+
+/* GLOBAL SEARCH (LARGE) -------------------------*/
+
+.global-search {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 400px;
+}
+
+.global-search input {
+    width: 100%;
+    padding: 5px 30px 5px 5px;
+    background: #FFFFFF;
+    border: 1px solid #1D86B7;
+    border-radius: 4px;
+    font-size: 1.2em;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.global-search input:focus {
+    outline: none;
+    -webkit-user-modify: read-write-plaintext-only; /* Android 3.0+ fix */
+}
+
+.global-search button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 100%;
+    background: url(../Images/Icons/search-16.png) center center no-repeat;
+    border: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    cursor: pointer;
+    opacity: 0.5;
+    filter: alpha(opacity = 50);
+}
+
+.global-search button:hover,
+.global-search button:active {
+    opacity: 1;
+    filter: alpha(opacity = 100);
+}
+
+.global-search button span {
+    display: none;
+}
+
+/* End Script: Mapping/modules/Search/CSS/large.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Shells/CSS/large.css ------------------------- */ 
+
+/* SHELL (LARGE) -------------------------*/
+
+.large-shell-main,
+.large-shell-left,
+.large-shell-right,
+.large-shell-center {
+    position: absolute;
+}
+
+.large-shell-header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.large-shell-header,
+.large-shell-bottom {
+    position: absolute;
+    display: inline-block;
+}
+
+.large-shell-left,
+.large-shell-bottom {
+    overflow: hidden;
+}
+
+.large-shell-left {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    margin-left: -1px;
+    border-right: 1px solid #999999;
+}
+
+.large-shell-bottom {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: #FFFFFF;
+}
+
+.large-shell-main,
+.large-shell-center {
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.large-shell-center {
+    z-index: 200;
+}
+
+.collapse-tab a {
+    display: block;
+    width: 39px;
+    height: 38px;
+    margin-left: -1px;
+    border: 1px solid #999999;
+    border-top: none;
+    border-left: none;
+    border-bottom-right-radius: 3px;
+    -moz-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    opacity: 0.65;
+    filter: alpha(opacity = 65);
+}
+
+.collapse-tab a:hover {
+    background-color: #EEEEEE;
+    opacity: 1;
+}
+
+.tab-open
+{
+    background: #FFFFFF url("../Images/Icons/chevron-left-16.png") no-repeat center center;
+}
+
+.tab-closed
+{
+    background: #FFFFFF url("../Images/Icons/chevron-right-16.png") no-repeat center center;
+}
+
+.shell-container-inner
+{
+    height: 100%;
+    position: relative;
+}
+
+/* End Script: Mapping/modules/Shells/CSS/large.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/SimpleLayerList/CSS/large.css ------------------------- */ 
+
+/* SIMPLE LAYER LIST (LARGE) -------------------------*/
+
+.layer .layers {
+    padding-left: 11px;
+}
+
+.layerlist .contents:hover {
+    background-color: #F7F7F7;
+}
+
+.layerlist .contents:active {
+    background-color: #EEEEEE;
+}
+
+.large-shell-bottom .layerlist-container {
+    height: 400px;
+}
+
+.large-shell-left .layerlist-container {
+    height: 100%;
+}
+
+.layer-info .contents {
+    margin-right: 32px;
+    padding: .5em .5em .5em 24px;
+}
+
+.layer-actions {
+    width: 32px;
+}
+
+.layerlist input {
+    left: 22px;
+    width: 15px;
+    height: 100%;
+    margin: 0 4px;
+}
+
+/* End Script: Mapping/modules/SimpleLayerList/CSS/large.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Site/CSS/large.css ------------------------- */ 
+.service-layers-failure {
+    width: 500px;
+}
+
+/* End Script: Mapping/modules/Site/CSS/large.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Toolbar/CSS/large.css ------------------------- */ 
+/* START: Toolbar */
+
+.toolbar-container {
+    background: #DDDDDD;
+}
+
+/* START: Toolbar Tabs --------------- */
+.toolbar-tab-container {
+    position: relative;
+}
+.toolbar-tab {
+    position: relative;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.toolbar-tab
+{
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-bottom: none;
+}
+
+.toolbar-tab a
+{
+    cursor: pointer;
+    text-decoration: none;
+    color: #444444;
+    font-weight: bold;
+}
+
+.toolbar-tab.tb-tab-active
+{
+    cursor: none;
+    background: #EEEEEE;
+    border: 1px solid #CCCCCC;
+    border-bottom: none;
+}
+
+.tb-tab-active:before, 
+.tb-tab-active:after {
+    content: "";
+    display: block;
+    width: 5px;
+    height: 5px;
+    border-bottom: 1px solid #CCCCCC;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0px;
+}
+
+.tb-tab-active:before {
+    border-right: 1px solid #CCCCCC;
+    -moz-box-shadow: 3px 3px 0px 0px #EEEEEE;
+    -webkit-box-shadow: 3px 3px 0px 0px #EEEEEE;
+    box-shadow: 3px 3px 0px 0px #EEEEEE;
+    left: -6px;
+}
+
+.tb-tab-active:after {
+    border-left: 1px solid #CCCCCC;
+    -moz-box-shadow: -3px 3px 0px 0px #EEEEEE;
+    -webkit-box-shadow: -3px 3px 0px 0px #EEEEEE;
+    box-shadow: -3px 3px 0px 0px #EEEEEE;
+    right: -6px;
+}
+
+ul.toolbar-tab-control {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0.5em 0.5em 0 0.5em;
+}
+
+ul.toolbar-tab-control:after {
+    content: " ";
+    display: block;
+    clear: both;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+ul.toolbar-tab-control li
+{
+    display: block;
+    list-style-type: none;
+    float: left;
+    width: auto;
+}
+
+ul.toolbar-tab-control li a
+{
+    display: block;
+    padding: 0.5em 0.75em;
+}
+/* END: Toolbar Tabs --------------- */
+
+.toolbar-body {
+    border-top: 1px solid #CCCCCC;
+    background: #EEEEEE;
+    margin-top: -1px; /* to hide the border behind the active tab */
+}
+.toolbar-body.large > .toolbar-group > h4 {
+    display: none; /* Quick Fix: hiding the extra tab group label from showing up. Should be removed from item templates */
+}
+
+.toolbar-group {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.toolbar-body > .toolbar-item.toolbar-group {
+    padding: 0.25em;
+}
+.toolbar-item.toolbar-group {
+    background: none;
+    margin: 0;
+    padding: 0;
+}
+.toolbar-item.toolbar-group > ul > li {
+    margin: 0.15em;
+} 
+.toolbar-item.toolbar-group > ul > li .toolbar-item.toolbar-group > ul > li {
+    margin: 0.25em;
+} 
+li .toolbar-item.toolbar-group {
+    background: #F5F5F5;
+}
+.toolbar-group > ul:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+.toolbar-item.button {
+    max-width: 10em;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+/* ------ START: Hover States ------ */
+.toolbar-item.button:hover
+{
+    cursor: pointer;
+    border: 1px solid #FF0000;
+    background: #FFB122;
+}
+
+.toolbar-item.button:hover {
+    border: 1px solid #CCCCCC;
+    background: #EEEEEE; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2VlZWVlZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZGRkZGQiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top, #eeeeee 0%, #dddddd 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#eeeeee), color-stop(100%,#dddddd)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #eeeeee 0%,#dddddd 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #eeeeee 0%,#dddddd 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #eeeeee 0%,#dddddd 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #eeeeee 0%,#dddddd 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#dddddd',GradientType=0 ); /* IE6-8 */
+}
+/* ------ END: Hover States ------ */
+
+/* End Script: Mapping/modules/Toolbar/CSS/large.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/Workflow/Forms/Items/CSS/large.css ------------------------- */ 
+
+/* FORM ITEMS (LARGE) -------------------------*/
+
+select,
+button {
+	cursor: pointer;
+}
+
+.form-item .group-box {
+    max-width: 640px;
+}
+
+.form-button-container {
+    padding-top: .5em;
+}
+
+.auto-complete .list-menu li {
+    cursor: pointer;
+}
+
+/* End Script: Mapping/modules/Workflow/Forms/Items/CSS/large.css ------------------------- */ 
+
+
+/* Begin Script: Mapping/modules/ZoomControl/CSS/large.css ------------------------- */ 
+
+/* ZOOM BUTTONS (LARGE) -------------------------*/
+
+.zoom-control-btn:hover
+{
+    background-color: #FFFFFF;
+    opacity: 1;
+}
+
+.zoom-control-btn:active
+{
+    background-color: #EEEEEE;
+}
+
+.zoom-control-btn a:focus,
+.zoom-control-btn a:hover {
+    opacity: 1;
+}
+
+/* End Script: Mapping/modules/ZoomControl/CSS/large.css ------------------------- */ 
+
